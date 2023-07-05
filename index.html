@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+  <title>HTML</title>
+  <script src="jq.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#show").click(function() {
+    $("#sb").fadeIn(10);
+     });
+     $("#h").click(function() {
+     $("#sb").fadeOut(10);
+      });
+  });
+      </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  transition: 1s;
+  color: #fff;
+  font-weight: 400;
+}
+
+body {
+  background: #111;
+}
+
+.landing {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.landing h1{
+  font-size: 35px
+}
+span {
+  color: dodgerblue;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  border-bottom: 2px dodgerblue solid;
+}
+
+a:hover {
+  color: dodgerblue;
+  text-decoration: underline dodgerblue;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: dodgerblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  background: none;
+  margin-top: 10px;
+  color: dodgerblue;
+  border: 2px dodgerblue solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .landing img {
+    width: 400px;
+  }
+  .about img{
+    width: 230px;
+  }
+  .about p{
+    font-size: 12px
+  }
+  header {
+    display: flex !important;
+  }
+}
+
+button:hover {
+  color: #111;
+  background: dodgerblue;
+}
+
+.sb {
+  background: #112;
+  display: none;
+  bottom: 0;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+}
+
+#show {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header {
+  border-bottom: 1px dodgerblue solid;
+  height: 70px;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  header {
+    display: none;
+  }
+  .about p {
+    font-size: 12px
+  }
+}
+.about{
+display: flex;
+align-items: center;
+height: 200px;
+justify-content: space-around;
+width: 370px;
+box-shadow: 3px 3px 7px #222;
+border-radius: 2px;
+padding: 10px;
+animation: an 1.50s ease-in-out;
+display: none ;
+}
+@keyframes an{
+  from{
+    opacity: 0;
+    
+  }to{
+    opacity: 1;
+  }
+}
+.sb img{
+  border: 1.60px dodgerblue solid;
+}
+html{
+  scroll-behavior: smooth;
+}
+ .p{
+     flex-wrap: wrap;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+   margin-left: 7%;   
+   }
+   .s{
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+     margin-left: 2%;   
+   }
+   .cbar{
+     color: dodgerblue;
+   }
+   .pybar{
+     color: yellow;
+   }
+   .card{
+     height: 350px;
+     width: 230px;
+     border-radius: 5px;
+     background: #112;
+     border: 1px solid dodgerblue;
+     box-shadow: 5px 5px 5px #222;
+     margin-top: 22px;
+   }
+  .card img:hover{
+	opacity: 1;
+}
+.card img {
+	width: 180px;
+	opacity: 0.50;
+	height: 220px;
+	border: 1px dodgerblue solid;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.card button{
+  width: 60px;
+  transform: none;
+}
+.card a:hover{
+  background: none;
+}
+
+   .cardd{
+     height: 300px;
+     width: 170px;
+     border-radius: 5px;
+     background: #112;
+     border: 1px solid dodgerblue;
+     box-shadow: 5px 5px 5px #222;
+     margin-top: 22px;
+   }
+  .cardd img:hover{
+	opacity: 1;
+}
+.cardd img {
+	width: 130px;
+	opacity: 0.50;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.cardd button{
+  margin-left: 90px;
+  width: 60px;
+  transform: none;
+}
+#skills {
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.skillss{
+  padding: 20px 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  margin-top: 15%;
+  margin-left: 25%;
+  background: #112;
+  width:240px;
+  height: 300px;
+}
+.skill {
+  margin-top: 10px;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.htmlbar {
+  color: #ED6915;
+}
+.bsbar{
+  color: blueviolet;
+}
+.jqbar{
+  color: orange;
+}
+.cssbar {
+  color: #4269F5;
+}
+
+.jsbar {
+  color: #D5D649;
+}
+
+.bar {
+  background-color: #fff;
+  width: 50%;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.activebar {
+  width: 0px;
+  height: 10px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(-10px);
+  transition: width 0.5s;
+}
+
+.activehtml {
+  width: 250px;
+  background-color: #ED6915;
+}
+
+.activecss {
+  width: 200px;
+  background-color: #4269F5;
+}
+.activec{
+  background-color: dodgerblue;
+  width: 200px;
+}
+.activepy{
+  background-color: yellow;
+  width: 230px;
+}
+.activejs {
+  width: 150px;
+  background-color: #D5D649
+}
+.activebs{
+  background-color: blueviolet;
+  width: 130px;
+}
+.activejq{
+  width: 120px;
+  background-color: orange;
+}
+.bgskill {
+  transform: rotate(90deg) translateY(40px);
+  left: 0;
+  top: 120px;
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.3;
+  color: #1f67db;
+  z-index: -10;
+}
+input{
+  width: 250px;
+  height: 25px;
+  border: none;
+  background: #111;
+  border-bottom: 2px dodgerblue solid;
+  margin-top: 12px;
+  color: dodgerblue;
+}
+textarea{
+  border: 2px dodgerblue solid;
+  height: 100px;
+  width: 250px;
+  background: #111;
+  color: dodgerblue;
+  margin-top: 10px;
+}
+::placeholder{
+  color: dodgerblue;
+}
+  </style>
+</head>
+<body>
+  <header>
+  <div id="show" style="cursor:pointer;margin-left:20px;">
+    <ul>
+    <div style="border-bottom:4px dodgerblue solid;width:27px;"></div>
+    <div style="border-bottom:4px dodgerblue solid;width:26px;margin-top: 5px;"></div>
+    <div style="border-bottom:4px dodgerblue solid;width:27px;margin-top: 5px;"></div>      
+    </ul>
+  </div>
+  <br>
+  </header>
+<br>
+<div align="center" class="sb" id="sb">
+  <br><br><br>
+  <h1 id="h" style="cursor:pointer;color:dodgerblue;left: 12px;position:absolute;font-family:sans-seirf;">x</h1>
+  <br>
+  <ul>
+    <br>
+    <img src="logo.png" style="width:150px;border-radius: 100%;background: #002">
+    <br><br>
+    <a class="hover-underline-animation" href="#">Home</a><br>
+    <br>
+    <a class="hover-underline-animation" href="#about1">About</a><br><br>
+  <a class="hover-underline-animation" href="#skills">Skills</a><br><br>
+    <a class="hover-underline-animation" href="#s">Services</a><br><br>
+ <a class="hover-underline-animation" href="#p">Team</a><br><br>
+ <a class="hover-underline-animation" href="#contact">Contact</a>
+  </ul>
+  <br>
+  <br>
+</div>
+  <nav class="nav">
+    <h2><span>Soft</span>Gen</h2>
+    <a class="hover-underline-animation" href="#">Home</a>
+    <a class="hover-underline-animation" href="#about1">About</a>
+    <a class="hover-underline-animation" href="#skills">Skills</a>
+    <a class="hover-underline-animation" href="#s">Services</a>
+    <a class="hover-underline-animation" href="#p">Team</a>
+    <a class="hover-underline-animation" href="#contact">Contact</a>
+  </nav>
+  <div class="landing">
+      <ul align="center">
+        <br><br>
+    <h3>Hello We Are</h3>
+    <h1 style="color:dodgerblue;">SoftGen!</h1>
+    <h3>We Develop The Dream</h3>
+    <button>Contact us</button>
+      </ul>
+    <img src="ill.png" width="40%">
+  </div>
+  <br><br><br><br><br>
+  <h1 id="about1" class="h1" align="center"><span style="font-size:40px;">A</span>bout us</h1>
+  <center>
+  <div id="about" class="about">
+    <img src="about.jpg" width="250px">
+    <p>Hello our name is<span> software generation</span> We have full-stack developers, We Learned html, css, js, jquery, bootstrap, python, php, mySql, C#, C++, Django.</p>
+  </div>
+  </center>
+  <br><br>
+  <h1 align="center"><span style="font-size:40px;">S</span>kills</h1>
+    <section id="skills">
+      <div class="content">
+        <div class="skillss">
+          <div class="skill">
+            <br>
+            <span class="htmlbar">HTML</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar1"></div>
+          </div>
+<div class="skill">
+  <span class="pybar">Python</span><br>
+  <div class="bar"></div>
+  <div class="activebar" id="bar7"></div>
+</div>
+<div class="skill">
+            <span class="cbar">C#</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar6"></div>
+        </div>
+          <div class="skill">
+            <span class="cssbar">CSS</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar2"></div>
+          </div>
+          <div class="skill">
+            <span class="jsbar">JavaScript</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar3"></div>
+          </div>
+<div class="skill">
+            <span class="bsbar">Bootstrap</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar4"></div>
+        </div>
+<div class="skill">
+            <span class="jqbar">Jquery</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar5"></div>
+        </div>
+      </div>
+      <h1 class="bgskill">Skills</h1>
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+    </section>
+    <br>
+    <br>
+    <br>
+  <br><br><br>
+  <h1 id="s" align="center"><span style="font-size:40px;">S</span>ervices</h1>
+  <div class="s">
+    <div align="center" class="cardd">
+      <br>
+      <img src="web-icon-white-3.jpg" alt="">
+      <h3>Web Development</h3>
+    </div>
+    <div align="center" class="cardd"><br>
+      <img src="website-design-3-xxl.png" alt="">
+      <h3>Graphic Designe</h3>
+    </div>
+  </div>
+  
+  
+  <br><br><br>
+  
+  <!-- team -->
+  
+  <h1 align="center"><span style="font-size:40px;">T</span>eam</h1>
+   <div id="p" class="p">
+     <div align="center" class="card">
+       <br>
+       <img src="received_215825920924997.jpeg" style="height:200px">
+       <h3>Ali Hany</h3>
+       <a href="https://www.facebook.com/profile.php?id=100088559487081&mibextid=ZbWKwL">
+         <button>More</button></a>
+     </div>
+     <div align="center" class="card">
+       <br>
+       <img src="Picsart_23-07-02_06-20-43-456.jpg" style="border: 1px dodgerblue solid;height: 200px">
+       <h3>Mohamed Waleed</h3>
+       <a href="https://www.facebook.com/profile.php?id=100061748866258&mibextid=ZbWKwL">
+         <button>More</button></a>
+     </div>
+     <div align="center" class="card">
+       <br>
+       <img src="OIG.jpeg" style="height:200px">
+       <h3>Zeyad Mostafa</h3>
+       <a href="https://www.facebook.com/zeyadmostafakamal?mibextid=ZbWKwL">
+         <button>More</button></a>
+     </div>
+     <div align="center" class="card">
+       <br>
+       <img src="received_985187732916301.jpeg" alt="">
+       <h3>Ihab Ghar</h3>
+       <a href="https://www.facebook.com/ihabghar1?mibextid=ZbWKwL">
+         <button>More</button></a>
+     </div>
+     <div align="center" class="card">
+       <img src="abdo.png" style="width:250px;border:none;height: 250px">
+       <h3>Abd El-Rahman Ebrahim</h3>
+       <a href="https://www.facebook.com/profile.php?id=100082493631420&mibextid=ZbWKwL">
+         <button>More</button></a>
+     </div>
+   </div>
+   <br>
+   <br><br>
+  <h1 id="contact" align="center"><span style="font-size:40px;">C</span>ontact us</h1>
+  <br>
+  <form align="center">
+    <input type="text" placeholder=" Enter Your Full Name"><br>
+    <input type="email" placeholder=" Enter Your Email"><br>
+    <textarea placeholder=" Enter Your Massage"></textarea><br>
+    <button type="submit">Submit</button>
+  </form><br><br>
+    <center style="background:black;height:100px;" id="footer"><br>
+      <h4>copyright by Mohamed Waleed ©️ in 2023.</h4>
+      <br>
+<script>
+const htmlbar = document.getElementById('bar1')
+cssbar = document.getElementById('bar2')
+jsbar = document.getElementById('bar3')
+bsbar = document.getElementById('bar4')
+jqbar = document.getElementById('bar5')
+cbar = document.getElementById('bar6')
+pybar = document.getElementById('bar7')
+about = document.getElementById('about')
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    htmlbar.classList.add('activehtml')
+    cssbar.classList.add('activecss')
+    jsbar.classList.add('activejs')
+    bsbar.classList.add('activebs')
+    jqbar.classList.add('activejq')
+    cbar.classList.add('activec')
+    pybar.classList.add('activepy')
+  }
+})
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 250) {
+  document.querySelector(".about").style.display ="flex";
+  }
+})
+</script>
+</body>
+</html>
