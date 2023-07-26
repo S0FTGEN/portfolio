@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  transition: 1s;
+  color: #fff;
+  font-weight: 400;
+}
+
+body {
+  background: #001;
+}
+
+.landing {
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.landing h1{
+  font-size: 35px
+}
+span {
+  color: dodgerblue;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  border-bottom: 2px dodgerblue solid;
+}
+
+a:hover {
+  color: dodgerblue;
+  text-decoration: underline dodgerblue;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: dodgerblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  background: none;
+  margin-top: 10px;
+  color: dodgerblue;
+  border: 2px dodgerblue solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .landing img {
+    width: 400px;
+  }
+  .about img{
+    width: 230px;
+  }
+  .about p{
+    font-size: 12px
+  }
+  header {
+    display: flex !important;
+  }
+}
+
+button:hover {
+  color: #111;
+  background: dodgerblue;
+}
+
+.sb {
+  background: #002;
+  display: none;
+  bottom: 0;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+}
+
+#show {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header {
+  border-bottom: 1px dodgerblue solid;
+  height: 70px;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  header {
+    display: none;
+  }
+  .about p {
+    font-size: 12px
+  }
+}
+.about{
+display: flex;
+align-items: center;
+height: 200px;
+justify-content: space-around;
+width: 370px;
+box-shadow: 3px 3px 7px #222;
+border-radius: 2px;
+padding: 10px;
+animation: an 1.50s ease-in-out;
+display: none ;
+}
+@keyframes an{
+  from{
+    opacity: 0;
+    
+  }to{
+    opacity: 1;
+  }
+}
+.sb img{
+  border: 1.60px dodgerblue solid;
+}
+html{
+  scroll-behavior: smooth;
+}
+ .p{
+     flex-wrap: wrap;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+   margin-left: 7%;   
+   }
+   .s{
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+     margin-left: 2%;   
+   }
+   .cbar{
+     color: dodgerblue;
+   }
+   .pybar{
+     color: yellow;
+   }
+   .card{
+     height: 350px;
+     width: 230px;
+     border-radius: 5px;
+     background: #002;
+     border: 1px solid dodgerblue;
+     box-shadow: 5px 5px 5px #222;
+     margin-top: 22px;
+   }
+  .card img:hover{
+	opacity: 1;
+}
+.card img {
+	width: 180px;
+	opacity: 0.50;
+	height: 220px;
+	border: 1px dodgerblue solid;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.card button{
+  width: 60px;
+  transform: none;
+}
+.card a:hover{
+  background: none;
+}
+
+   .cardd{
+     height: 300px;
+     width: 170px;
+     border-radius: 5px;
+     background: #002;
+     border: 1px solid dodgerblue;
+     box-shadow: 5px 5px 5px #222;
+     margin-top: 22px;
+   }
+  .cardd img:hover{
+	opacity: 1;
+}
+.cardd img {
+	width: 130px;
+	opacity: 0.50;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.cardd button{
+  margin-left: 90px;
+  width: 60px;
+  transform: none;
+}
+#skills {
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.skillss{
+  padding: 20px 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  margin-top: 15%;
+  margin-left: 25%;
+  background: #002;
+  width:240px;
+  height: 300px;
+}
+.skill {
+  margin-top: 10px;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.htmlbar {
+  color: #ED6915;
+}
+.bsbar{
+  color: blueviolet;
+}
+.jqbar{
+  color: orange;
+}
+.cssbar {
+  color: #4269F5;
+}
+
+.jsbar {
+  color: #D5D649;
+}
+
+.bar {
+  background-color: #fff;
+  width: 50%;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.activebar {
+  width: 0px;
+  height: 10px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(-10px);
+  transition: width 0.5s;
+}
+
+.activehtml {
+  width: 250px;
+  background-color: #ED6915;
+}
+
+.activecss {
+  width: 200px;
+  background-color: #4269F5;
+}
+.activec{
+  background-color: dodgerblue;
+  width: 200px;
+}
+.activepy{
+  background-color: yellow;
+  width: 230px;
+}
+.activejs {
+  width: 150px;
+  background-color: #D5D649
+}
+.activebs{
+  background-color: blueviolet;
+  width: 130px;
+}
+.activejq{
+  width: 120px;
+  background-color: orange;
+}
+.bgskill {
+  transform: rotate(90deg) translateY(40px);
+  left: 0;
+  top: 120px;
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.3;
+  color: #1f67db;
+  z-index: -10;
+}
+input{
+  width: 250px;
+  height: 25px;
+  border: none;
+  background: #111;
+  border-bottom: 2px dodgerblue solid;
+  margin-top: 12px;
+  color: dodgerblue;
+}
+textarea{
+  border: 2px dodgerblue solid;
+  height: 100px;
+  width: 250px;
+  background: #111;
+  color: dodgerblue;
+  margin-top: 10px;
+}
+::placeholder{
+  color: dodgerblue;
+}
