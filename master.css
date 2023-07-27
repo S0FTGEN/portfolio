@@ -359,9 +359,37 @@ textarea{
   color: dodgerblue;
 }
 
-.team {
-    margin: auto !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+
+
+.form{
+  width: 40%;
+  height: 40vh;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.form input{
+  width:90% ;
+  height: 15%;
+  padding-left: 10px;
+  font-size: 17px;
+  outline: none;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.form textarea{
+  width: 90%;
+  padding-left: 10px;
+  font-size: 17px;
+  color: white;
+  outline: none;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.form button{
+  width: 40%;
+  height: 15%;
+  cursor: pointer;
 }
