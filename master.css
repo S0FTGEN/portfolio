@@ -156,11 +156,14 @@ html{
   scroll-behavior: smooth;
 }
  .p{
-     flex-wrap: wrap;
-     display: flex;
-    align-items: center;
-    justify-content: space-around;
-   margin-left: 7%;   
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    gap: 30px;
+    margin: auto;
+    
    }
    .s{
      display: flex;
@@ -354,4 +357,11 @@ textarea{
 }
 ::placeholder{
   color: dodgerblue;
+}
+
+.team {
+    margin: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
