@@ -85,10 +85,11 @@ button {
     width: 400px;
   }
   .about img{
-    width: 230px;
+    width: 200px !important;
   }
   .about p{
-    font-size: 12px
+    font-size: 10px;
+    width:90%
   }
   header {
     display: flex !important;
@@ -125,21 +126,33 @@ header {
   header {
     display: none;
   }
-  .about p {
-    font-size: 12px
-  }
+  
 }
 .about{
 display: flex;
 align-items: center;
-height: 200px;
-justify-content: space-around;
-width: 370px;
-box-shadow: 3px 3px 7px #222;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+width: 60%;
 border-radius: 2px;
 padding: 10px;
 animation: an 1.50s ease-in-out;
 display: none ;
+padding:0 20px;
+margin-bottom: 40px;
+margin-top: 30px;
+}
+.about p {
+  width: 50%;
+  font-size: 18px;
+}
+@media (max-width: 700px) {
+
+  .about p{
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 @keyframes an{
   from{
@@ -393,3 +406,5 @@ textarea{
   height: 15%;
   cursor: pointer;
 }
+
+
