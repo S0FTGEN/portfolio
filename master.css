@@ -106,11 +106,13 @@ button:hover {
   background: #002;
   display: none;
   bottom: 0;
-  width: 200px;
+  width: 300px;
   height: 100vh;
   position: fixed;
   z-index: 99999;
 }
+
+
 
 #show {
   border-radius: 5px;
@@ -221,7 +223,7 @@ html{
 
 .card button{
   width: 70%;
-  height: 15%;
+  height: 50px;
   transform: none;
   cursor: pointer;
 }
@@ -371,7 +373,7 @@ input{
   color: dodgerblue;
 }
 textarea{
-  border: 2px dodgerblue solid;
+  border  : 2px dodgerblue solid;
   height: 100px;
   width: 250px;
   background: #111;
@@ -382,13 +384,14 @@ textarea{
   color: dodgerblue;
 }
 
-
+ /* ihab code  */
 
 .form{
   width: 40%;
   height: 40vh;
   margin: auto;
   /* background-color: red; */
+  margin-bottom: 20px;
 }
 
 .form input{
@@ -409,6 +412,9 @@ textarea{
   outline: none;
   margin-bottom: 15px;
   resize: none;
+  padding-top: 10px;
+  background: none;
+  
 }
 
 .form button{
@@ -421,5 +427,44 @@ textarea{
   width: 80%;
   cursor: pointer;
   height: 45px;
+}
+
+input{
+  background: none;
+}
+
+
+@media (max-width: 600px) {
+    .form{
+      width: 70%;
+
+    }
+
+    .form button{
+      width: 80%;
+
+    }
+
+}
+
+button{
+  border-radius: 50px;
+  height: 50px;
+}
+
+.sb ul li:first-child{          
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.sb ul li a {
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 260px;
+}
+
+.sb ul li a:hover{
+  background-color: rgba(128, 128, 128, 0.438);
+
 }
 
